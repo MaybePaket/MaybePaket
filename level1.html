@@ -1,0 +1,17 @@
+<style>pre{white-space:pre-wrap}*{color:red;font-family:times new roman;body {background-color:black;}</style>
+
+<center>
+<pre>Watch until the end to go to the next level</pre>
+<video id='myVideo' width="320" height="240" controls>
+  <source src="videos/1.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+</center>
+  
+<script>
+    const videoElement = document.getElementById('myVideo'); // Replace 'myVideo' with your video element's ID
+
+    videoElement.addEventListener('ended', (event) => {
+        window.location.href = "level2.html";
+    });
+</script>
